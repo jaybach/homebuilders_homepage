@@ -1,0 +1,140 @@
+title {
+  text-align: center;
+}
+
+header {
+  background-color: black;
+  display: block;
+  height: 50px;
+  width: 100%;
+}
+
+#logo-box {
+  display: inline-block;
+  height: 50px;
+  margin-left: 15px;
+  width: 100px;
+}
+
+#logo {
+  color: yellow;
+  margin-left: 10%;
+  margin-top: 6%;
+  text-align: left;
+  font-size: 110%;
+}
+
+#nav {
+  float: right;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.browse {
+  float: right;
+  margin-right: 15px;
+  position: relative;
+  top: 30%;
+}
+
+a {
+  color: yellow;
+  font-family: Verdana;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+body {
+  border: 2px solid red;
+  display: block;
+  margin: auto;
+}
+
+#main {
+  border: 2px solid blue;
+  display: block;
+  height: 500px;
+  width: 100%;
+}
+
+#door {
+  animation: door 4s;
+  /*animation-delay: 1s;*/
+  animation-fill-mode: forwards;
+  border: 10px solid black;
+  height: 180px;
+  position: absolute;
+  width: 90px;
+}
+
+@keyframes door {
+  /*0% {left: 0px; top: 10%;}*/
+  0% {right: -504px; top: 55%;}
+  100% {right: 575px; top: 55%;}
+}
+
+#floor {
+  animation: floor 4s;
+  /*animation-delay: 3s;*/
+  animation-fill-mode: forwards;
+  background-color: black;
+  height: 10px;
+  /*margin-left: -504px;*/    /*<-- activate this to make this element start just off the screen*/
+  position: absolute;
+  /*top: 50%;*/
+ /* -webkit-animation-duration: 5s;*/
+  width: 500px;
+}
+
+@keyframes floor {
+  /*0% {left: 0px; top: 10%;}*/
+  0% {left: -504px; top: 550px;}
+  100% {left: 400px; top: 550px;}
+}
+
+#wallA {
+  animation: wallA 3s;
+  /*animation-delay: 8s;*/
+  animation-fill-mode: forwards;
+  background-color: black;
+  height: 300px;
+  position: absolute;
+  width: 10px;
+}
+
+@keyframes wallA {
+  0% {left: -504px; top: -60%;}
+  100% {left: 400px; top: 250px;}
+}
+
+#wallB {
+  animation: wallB 3s;
+  /*animation-delay: 9s;*/
+  animation-fill-mode: forwards;
+  background-color: black;
+  height: 300px;
+  position: absolute;
+  width: 10px;
+}
+
+@keyframes wallB {
+  0% {right: -504px; top: -60%;}
+  100% {right: 380px; top: 250px;}
+}
+
+#roof {
+  animation: roof 3s;
+  /*animation-delay: 12s;*/
+  animation-fill-mode: forwards;
+  border-bottom: 100px solid black;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+
+@keyframes roof {
+  0% {left: 347px; top: -60%;}
+  100% {left: 347px; top: 150px;}
+}
