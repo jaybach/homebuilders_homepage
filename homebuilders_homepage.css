@@ -45,13 +45,11 @@ a {
 }
 
 body {
-  /*border: 2px solid red;*/
   display: block;
   margin: auto;
 }
 
 #main {
-  /*border: 2px solid blue;*/
   display: block;
   height: 150px;
   width: 100%;
@@ -84,16 +82,12 @@ body {
   animation-fill-mode: forwards;
   background-color: black;
   height: 10px;
-  /*margin-left: -504px;*/    /*<-- activate this to make this element start just off the screen*/
   position: absolute;
-  /*top: 50%;*/
- /* -webkit-animation-duration: 5s;*/
   width: 500px;
   z-index: -1;
 }
 
 @keyframes floor {
-  /*0% {left: 0px; top: 10%;}*/
   0% {left: -504px; top: 550px;}
   100% {left: 400px; top: 550px;}
 }
@@ -184,30 +178,18 @@ body {
 
 #slogan {
   animation: slogan 6s;
-  animation-delay: 4.5s;
+  animation-delay: 4.25s;
   animation-fill-mode: forwards;
-  /*border: 1px solid red;*/
-  /*color: #87CEFA;*/
-  /*color: #87CEFA;*/
   color: #66D9D9;
   font-size: 325%;
   margin-top: -30%;
-  /*opacity: 0;*/
   opacity: 0;
-  /*-webkit-transition: opacity 2s ease-in;*/
   padding-left: 100px;
   text-align: center;
   text-shadow: 0.5px 0.5px yellow;
-  /*visibility: hidden;*/
 }
 
 @keyframes slogan {
-  /*0% {visibility: hidden;}
-  100% {visibility: visible;}*/
   0% {opacity: 0;}
-  /*33% {opacity: 0.3;}*/
-  /*66% {opacity: 0.6}*/
   100% {opacity: 1;}
-  /*0% {transition: opacity 0 ease-in;}
-  100% {transition: opacity 1 2s ease-in;}*/
 }
