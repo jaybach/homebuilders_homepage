@@ -45,15 +45,22 @@ a {
 }
 
 body {
-  border: 2px solid red;
+  /*border: 2px solid red;*/
   display: block;
   margin: auto;
 }
 
 #main {
-  border: 2px solid blue;
+  /*border: 2px solid blue;*/
   display: block;
-  height: 500px;
+  height: 505px;
+  width: 100%;
+}
+
+#grass {
+  background-color: green;
+  margin-top: 39.5%;
+  height: 5px;
   width: 100%;
 }
 
@@ -65,12 +72,13 @@ body {
   height: 180px;
   position: absolute;
   width: 90px;
+  z-index: -1;
 }
 
 @keyframes door {
-  /*0% {left: 0px; top: 10%;}*/
-  0% {right: -504px; top: 55%;}
-  100% {right: 575px; top: 55%;}
+  0% {left: 1280px; top: 54%;}
+  /*100% {right: 575px; top: 55%;}*/
+  100% {left: 595px; top: 54%;}
 }
 
 #floor {
@@ -84,6 +92,7 @@ body {
   /*top: 50%;*/
  /* -webkit-animation-duration: 5s;*/
   width: 500px;
+  z-index: -1;
 }
 
 @keyframes floor {
@@ -100,6 +109,7 @@ body {
   height: 300px;
   position: absolute;
   width: 10px;
+  z-index: -1;
 }
 
 @keyframes wallA {
@@ -115,11 +125,12 @@ body {
   height: 300px;
   position: absolute;
   width: 10px;
+  z-index: -1;
 }
 
 @keyframes wallB {
-  0% {right: -504px; top: -60%;}
-  100% {right: 380px; top: 250px;}
+  0% {left: 1280px; top: -60%;}
+  100% {left: 890px; top: 250px;}
 }
 
 #roof {
@@ -132,9 +143,56 @@ body {
   height: 0;
   position: absolute;
   width: 0;
+  z-index: -1;
 }
 
 @keyframes roof {
   0% {left: 347px; top: -60%;}
   100% {left: 347px; top: 150px;}
+}
+
+#sign {
+  animation: sign 3s;
+  /*animation-delay: 15s;*/
+  animation-fill-mode: forwards;
+  background-color: #FFFACD;
+  border: 5px solid black;
+  font-family: Verdana;
+  font-size: 130%;
+  height: 60px;
+  padding-top: 10px;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+}
+
+@keyframes sign {
+  0% {left: 210px; top: -80%;}
+  100% {left: 200px; top: 420px;}
+}
+
+#sign-post {
+  animation: sign-post 3s;
+  /*animation-delay: 15s;*/
+  animation-fill-mode: forwards;
+  background-color: black;
+  height: 60px;
+  position: absolute;
+  width: 8px;
+}
+
+@keyframes sign-post {
+  0% {left: 252px; top: -80%;}
+  100% {left: 252px; top: 500px;}
+}
+
+#slogan {
+  border: 1px solid red;
+  /*color: #87CEFA;*/
+  /*color: #87CEFA;*/
+  color: #66D9D9;
+  font-size: 325%;
+  margin-top: -30%;
+  padding-left: 100px;
+  text-align: center;
 }
