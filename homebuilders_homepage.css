@@ -73,8 +73,8 @@ body {
 }
 
 @keyframes door {
-  0% {left: 1280px; top: 54%;}
-  100% {left: 595px; top: 54%;}
+  0% {left: 1280px; top: 55%;}
+  100% {left: 595px; top: 55%;}
 }
 
 #floor {
